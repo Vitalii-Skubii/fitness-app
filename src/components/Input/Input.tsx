@@ -4,7 +4,7 @@ import { IProps } from './Input.types';
 import { MEASURES, TABS } from 'constants/data';
 
 export const Input: FC<IProps> = (props) => {
-  const { onChange, inputState, tab, parameter } = props;
+  const { onChange, inputState, tab, parameter, autoFocus } = props;
 
   const measure =
     parameter === 'height'
@@ -24,7 +24,7 @@ export const Input: FC<IProps> = (props) => {
   return (
     <div className={styles.inputWrapper}>
       {inputState.length > 0 && <p>{measure}</p>}
-      <input onChange={onChange} value={inputState} placeholder={placeholder} />
+      <input onChange={onChange} value={inputState} placeholder={placeholder} autoFocus={autoFocus}/>
     </div>
   );
 };

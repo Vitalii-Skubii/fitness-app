@@ -5,4 +5,5 @@ export interface IProps{
   inputState: string;
   tab:string;
   parameter:string;
+  autoFocus?:boolean
 }

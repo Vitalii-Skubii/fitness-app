@@ -4,7 +4,7 @@ export interface InputState {
 }
 
 export interface IState {
-  option: string;
+  goal: string;
   height: number|null;
   weight: number|null;
   choices: string[];

@@ -25,6 +25,7 @@ export const MeasureScreen: FC<IProps> = (props) => {
         onChange={onHeightChange}
         parameter="height"
         tab={tab}
+        autoFocus
       />
       <Input
         inputState={inputState.weight}

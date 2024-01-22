@@ -5,7 +5,7 @@ import React, { ChangeEvent, useCallback, useState } from 'react';
 
 export const useMultiScreenComponent = () => {
   const initialState: IState = {
-    option: '',
+    goal: '',
     height: null,
     weight: null,
     choices: [] as string[],
@@ -92,9 +92,9 @@ export const useMultiScreenComponent = () => {
     []
   );
 
-  const handleGoalScreenNext = (option: string) => {
+  const handleGoalScreenNext = (goal: string) => {
     setState({
-      option,
+      goal,
       height: null,
       weight: null,
       choices: [],
@@ -135,7 +135,7 @@ const handleFinish=()=>{
 
       if (screen === 3) {
         setState({
-          option: state.option,
+          goal: state.goal,
           height: null,
           weight: null,
           choices: [],
