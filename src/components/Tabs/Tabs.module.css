@@ -1,0 +1,23 @@
+.tabsContainer {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.activeTab {
+  background-color: var(--disabled-color);
+}

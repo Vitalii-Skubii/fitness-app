@@ -1,0 +1,18 @@
+.wrapper {
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 90px;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text {
+  margin-top: 15px;
+  color: var(--secondary-text);
+  margin-bottom: 120px;
+}

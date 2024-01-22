@@ -1,0 +1,60 @@
+.thumb {
+  display: flex;
+  align-items: center;
+  width: 172px;
+  height: 60px;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 0 35px 0 55px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all ease 0.8s;
+}
+
+.thumb:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moon {
+  background: url('../../assets/moon.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.food {
+  background: url('../../assets/food.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.soda {
+  background: url('../../assets/soda.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.salt {
+  background: url('../../assets/salt.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.pizza {
+  background: url('../../assets/pizza.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.cross {
+  background: url('../../assets/cross.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.marked {
+  border: 1px solid var(--primary-color);
+}
+
+.text {
+  font-size: 12px;
+}

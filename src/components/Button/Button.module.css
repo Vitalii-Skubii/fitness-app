@@ -1,0 +1,18 @@
+.continueButton {
+  background: var(--primary-color);
+  border-radius: 12px;
+  color: #ffffff;
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.continueButton:disabled {
+  background: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.headerButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+}

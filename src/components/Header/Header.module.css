@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.text {
+  color: var(--nav-text-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo {
+  margin: 0 10px;
+}

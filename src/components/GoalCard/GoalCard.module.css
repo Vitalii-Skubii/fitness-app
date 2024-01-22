@@ -1,0 +1,51 @@
+.thumb {
+  display: flex;
+  align-items: center;
+  width: 172px;
+  height: 172px;
+  border-radius: 20px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 80px;
+  border: 1px solid var(--border-color);
+  background: var(--gradient-color);
+  cursor: pointer;
+  transition: all ease 0.8s;
+}
+
+.thumb:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weight {
+  background: url('../../assets/weight.svg'),
+    linear-gradient(200deg, var(--gradient-color) 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.muscle {
+  background-image: url('../../assets/muscle.svg'),
+    linear-gradient(200deg, var(--gradient-color) 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.habits {
+  background-image: url('../../assets/habits.svg'),
+    linear-gradient(200deg, var(--gradient-color) 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.habit {
+  background-image: url('../../assets/habit.svg'),
+    linear-gradient(200deg, var(--gradient-color) 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+}

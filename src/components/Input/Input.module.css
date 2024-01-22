@@ -1,0 +1,10 @@
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--secondary-text);
+}
