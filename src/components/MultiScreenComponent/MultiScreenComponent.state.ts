@@ -26,9 +26,7 @@ export const useMultiScreenComponent = () => {
     inputState
   );
 
-  console.log(tabState, 'tabState');
-
-  const handleHeightChange = useCallback(
+   const handleHeightChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const value = event.target.value;
 
@@ -127,6 +125,10 @@ export const useMultiScreenComponent = () => {
     });
   };
 
+const handleFinish=()=>{
+  console.log('Congrats, here is your options', state);
+}
+
   const handleBackToPrevious = () => {
     if (screen > 1) {
       setScreen(screen - 1);
@@ -159,6 +161,7 @@ export const useMultiScreenComponent = () => {
     handleBackToPrevious,
     handleHeightChange,
     handleWeightChange,
+    handleFinish,
     onTabChange,
     inputState,
     screen,

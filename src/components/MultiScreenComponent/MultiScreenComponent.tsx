@@ -15,6 +15,7 @@ const MultiScreenComponent: React.FC = () => {
     onTabChange,
     handleHeightChange,
     handleWeightChange,
+    handleFinish,
     screen,
     state,
     inputState,
@@ -38,6 +39,7 @@ const MultiScreenComponent: React.FC = () => {
       {screen === 3 && (
         <DestructiveScreen
           onChoose={handleDesctructionScreenChoice}
+          handleFinish={handleFinish}
           state={state}
         />
       )}

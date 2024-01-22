@@ -15,8 +15,6 @@ export const MeasureScreen: FC<IProps> = (props) => {
     tab,
   } = props;
 
-  console.log(inputState);
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.tabWrapper}>

@@ -19,8 +19,6 @@ const TabsComponent: React.FC<TabsComponentProps> = ({ onTabChange, tab }) => {
     [onTabChange]
   );
 
-  console.log(activeTab, 'activeTab');
-
   return (
     <div className={styles.tabsContainer}>
       {Object.entries(TABS).map(([key, value]) => (

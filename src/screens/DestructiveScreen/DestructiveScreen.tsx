@@ -3,17 +3,10 @@ import styles from './DestructiveScreen.module.css';
 import { BEHAVIORS } from 'constants/data';
 import { DestructiveCard } from 'components/DestructiveCard';
 import { Button } from 'components/Button';
-import { IState } from 'types/stateTypes';
+import { IProps } from './DestructiveScreen.types';
 
-interface IProps {
-  onChoose: (option:string) => void;
-  state: IState;
-}
-
-export const DestructiveScreen: FC<IProps> = ({ onChoose, state }) => {
-
-  console.log(state, 'state');
-
+export const DestructiveScreen: FC<IProps> = (props) => {
+  const { onChoose, state, handleFinish } = props;
 
   return (
     <div className={styles.wrapper}>
@@ -30,7 +23,9 @@ export const DestructiveScreen: FC<IProps> = ({ onChoose, state }) => {
           />
         ))}
       </div>
-      <Button  disabled={state.choices.length===0}> Continue</Button>
+      <Button disabled={state.choices.length === 0} onClick={handleFinish}>
+        Continue
+      </Button>
     </div>
   );
 };
